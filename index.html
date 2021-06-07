@@ -1,22 +1,24 @@
 <!DOCTYPE html>
-<html>
+<html>	
 	<head>
-		<title>Jiahui(Alan) Lu </title>
-	</head>
+		<meta charset="UTF-8">
+		<title>Jiahui (Alan) Lu </title>
+		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+	</head>	
 	
-	<body>
+	<body>	
 		<div id="overall">
-			<table>
-				<td>				
+			<el-row>
+				<el-col :span="18">
 					<h1>Jiahui Lu</h1>
 					
 					<h2>Biography</h2>
-					I am a second-year Computer Science PhD student in the <a href="https://cc.gatech.edu">Computer of Computing at Georgia Tech</a>. I am interested in cryptography.<br> 
-					I graduated from Shanghai Jiao Tong University in 2017(majored in Computer Science). I was a student of <a href="https://acm.sjtu.edu.cn">ACM Honored Program</a>, <a href="http://zhiyuan.sjtu.edu.cn/">Zhiyuan College</a> at SJTU.<br>
+					I am a fourth-year Computer Science PhD student in the <a href="https://cc.gatech.edu">Computer of Computing at Georgia Tech</a>. I am interested in cryptography.<br> 
+					I graduated from Shanghai Jiao Tong University in 2017 (majored in Computer Science). I was a student of <a href="https://acm.sjtu.edu.cn">ACM Honored Program</a>, <a href="http://zhiyuan.sjtu.edu.cn/">Zhiyuan College</a> at SJTU.<br>
 					
 					<h2>Research</h2>
 					I am now working with Professor <a href="https://www.cc.gatech.edu/~aboldyre">Sasha Boldyerva</a>, focusing on anonymous review system.<br>
-					I am currently funded by Professor <a href="http://www.cs.toronto.edu/~vlad/">Vlad Kolesnikov</a>, also working on optimizations of some MPC protocols.<br>
+					I worked with Professor <a href="http://www.cs.toronto.edu/~vlad/">Vlad Kolesnikov</a>, also working on optimizations of some MPC protocols.<br>
 					I worked with Professor <a href="https://rist.tech.cornell.edu/">Tom Ristenpart</a> as an intern at <a href="https://tech.cornell.edu">Cornell Tech</a> for half a year since August 2016.<br>
 					
 					<h2>Contact Information</h2>
@@ -24,16 +26,21 @@
 					<b>Office: </b>CODA E0955
 					<br><br>
 					<b>CV: </b><a href="https://github.com/AlanWaP/CV/blob/master/cv.pdf">CV</a>
-				</td>
-				<td>
-					<img src="https://github.com/AlanWaP/AlanWaP.github.io/raw/master/photo.jpg" width="664" height="362" />
-					
-				</td>
-			</table>
+			
+				</el-col>
+				<el-col :span="6">
+					<img src="https://github.com/AlanWaP/AlanWaP.github.io/raw/master/photo2.jpg" height="300" />
+				</el-col>
+			</el-row>
 		</div>
+		
 		<div id="publication">
 			<h2>Publications</h2>
 			<ul>
+				<li>Efficient Generic Arithmetic for KKW - Practical Linear MPC-in-the-Head NIZK on Commodity Hardware without Trusted Setup<br>
+				David Heath, Vladimir Kolesnikov, Jiahui Lu<br>
+				<i>International Symposium on Cyber Security Cryptology and Machine Learning - CSCML 2021</i>
+				<br><br>
 				<li><a href="https://eprint.iacr.org/2017/664">Message Franking via Committing Authenticated Encryption</a><br>
 				Paul Grubbs, Jiahui Lu, and Thomas Ristenpart<br>
 				<i>Advances in Cryptology - Crypto 2017</i>
@@ -44,5 +51,17 @@
 				<br><br>
 			</ul>
 		</div>
+			
 	</body>
+	
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+	<script>
+		new Vue({
+			el: '#overall',
+			data: function() {
+				return { visible: false }
+			}
+		})
+	</script>
 </html>
