@@ -7,63 +7,90 @@
 	</head>	
 	
 	<body>	
-		<div id="overall">
-			<el-row>
-				<el-col :span="18">
-					<h1>Jiahui Lu</h1>
-					
-					<h2>Biography</h2>
-					I will start new job at JD.com Silicon Valley R&amp;D Center in 2022 as research scientist to do works in cryptography.<br> 
-					I graduated from Georgia Institute of Technology in 2021 (M.S. in Computer Science).<br> 
-					I graduated from Shanghai Jiao Tong University in 2017 (B.S. in Computer Science). I was a student of <a href="https://acm.sjtu.edu.cn">ACM Honored Program</a>, <a href="http://zhiyuan.sjtu.edu.cn/">Zhiyuan College</a> at SJTU.<br>
-					
-					<h2>Research</h2>
-					I worked with Professor <a href="https://www.cc.gatech.edu/~aboldyre">Sasha Boldyerva</a>, focusing on anonymous review system.<br>
-					I worked with Professor <a href="http://www.cs.toronto.edu/~vlad/">Vlad Kolesnikov</a>, also working on optimizations of some MPC protocols.<br>
-					I worked with Professor <a href="https://rist.tech.cornell.edu/">Tom Ristenpart</a> as an intern at <a href="https://tech.cornell.edu">Cornell Tech</a> for half a year since August 2016.<br>
-					
-					<h2>Contact Information</h2>
-					<b>Email: </b>wap(dot)alan(at)gmail(dot)com, jlu355(at)gatech(dot)edu<br>
-					<!--<b>Office: </b>CODA E0955-->
-					<br>
-					<b>CV: </b><a href="cv - Jiahui Lu.pdf">CV</a>
-			
-				</el-col>
-				<el-col :span="5">
-					<img src="photo2.jpg" height="300" />
-				</el-col>
-			</el-row>
+		<div class="page">
+			<div id="overall" >
+				<el-row>
+					<el-col :span="18" class="container">
+						<h1>Jiahui Lu</h1>
+						
+						<h2>Biography</h2>
+						I am working as research scientist at JD.com Silicon Valley R&amp;D Center on privacy computing.<br> 
+						I graduated from Georgia Institute of Technology in 2021 (M.S. in Computer Science).<br> 
+						I graduated from Shanghai Jiao Tong University in 2017 (B.S. in Computer Science). I was a student of <a href="https://acm.sjtu.edu.cn">ACM Honored Program</a>, <a href="http://zhiyuan.sjtu.edu.cn/">Zhiyuan College</a> at SJTU.<br>
+						
+						<h2>Research</h2>
+						I worked with Professor <a href="https://www.cc.gatech.edu/~aboldyre">Sasha Boldyerva</a>, focusing on anonymous review system.<br>
+						I worked with Professor <a href="http://www.cs.toronto.edu/~vlad/">Vlad Kolesnikov</a>, also working on optimizations of some MPC protocols.<br>
+						I worked with Professor <a href="https://rist.tech.cornell.edu/">Tom Ristenpart</a> as an intern at <a href="https://tech.cornell.edu">Cornell Tech</a> for half a year since August 2016.<br>
+						
+						
+
+						<h2>Publications</h2>
+						<ul>
+							<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-78086-9_31">Efficient Generic Arithmetic for KKW - Practical Linear MPC-in-the-Head NIZK on Commodity Hardware without Trusted Setup</a><br> 
+							David Heath, Vladimir Kolesnikov, Jiahui Lu<br>
+							<i>International Symposium on Cyber Security Cryptology and Machine Learning - CSCML 2021</i><br>
+							Conference Talk
+							<br><br>
+							<li><a href="https://eprint.iacr.org/2017/664">Message Franking via Committing Authenticated Encryption</a><br>
+							Paul Grubbs, Jiahui Lu, and Thomas Ristenpart<br>
+							<i>Advances in Cryptology - Crypto 2017</i>
+							<br><br>
+							<li><a href="https://stressattack.github.io/">Side-Channel Attacks on Shared Search Indexes</a>
+							<br>Liang Wang, Paul Grubbs, Jiahui Lu, Vincent Bindschaedler, David Cash, and Thomas Ristenpart<br>
+							<i>IEEE Symposium on Security and Privacy - Oakland 2017</i>
+							<br><br>
+						</ul>
+
+					</el-col>
+					<el-col :span="5" class="container">
+						<img src="photo2.jpg" height="300" class="photo"/>
+						<br>
+						<!--<h2>Contact Information</h2>-->
+						<b>Email: </b><br>
+						jlu355(at)gatech(dot)edu<br>
+						wap(dot)alan(at)gmail(dot)com<br>
+						<!--<b>Office: </b>CODA E0955-->
+						<br>
+						<a href="cv - Jiahui Lu.pdf">CV</a><br>
+						<a href="https://github.com/AlanWaP">Github</a><br>
+						<a href="https://www.linkedin.com/in/alanwap">LinkedIn</a>
+					</el-col>
+				</el-row>
+			</div>
 		</div>
-		
-		<div id="publication">
-			<h2>Publications</h2>
-			<ul>
-				<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-78086-9_31">Efficient Generic Arithmetic for KKW - Practical Linear MPC-in-the-Head NIZK on Commodity Hardware without Trusted Setup</a><br> 
-				David Heath, Vladimir Kolesnikov, Jiahui Lu<br>
-				<i>International Symposium on Cyber Security Cryptology and Machine Learning - CSCML 2021</i><br>
-				Conference Talk
-				<br><br>
-				<li><a href="https://eprint.iacr.org/2017/664">Message Franking via Committing Authenticated Encryption</a><br>
-				Paul Grubbs, Jiahui Lu, and Thomas Ristenpart<br>
-				<i>Advances in Cryptology - Crypto 2017</i>
-				<br><br>
-				<li><a href="https://stressattack.github.io/">Side-Channel Attacks on Shared Search Indexes</a>
-				<br>Liang Wang, Paul Grubbs, Jiahui Lu, Vincent Bindschaedler, David Cash, and Thomas Ristenpart<br>
-				<i>IEEE Symposium on Security and Privacy - Oakland 2017</i>
-				<br><br>
-			</ul>
-		</div>
-			
 	</body>
-	
-	<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-	<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-	<script>
-		new Vue({
-			el: '#overall',
-			data: function() {
-				return { visible: false }
-			}
-		})
-	</script>
 </html>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="https://unpkg.com/element-ui/lib/index.js"></script>
+<script>
+	new Vue({
+		el: '#overall',
+		data: function() {
+			return { visible: false }
+		}
+	})
+</script>
+
+<style>
+	.page {
+		margin-top: 1em;
+		margin-left: 5em;
+		margin-right: 5em;
+	}
+	.container {
+		margin: 1em;
+		background: #fff;
+		border-radius: 5px;
+		box-shadow: 0 5px 20px #bbb;
+		box-sizing: border-box;
+		padding: 1rem;
+	}
+	.photo {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+
