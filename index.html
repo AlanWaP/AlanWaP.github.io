@@ -1,119 +1,679 @@
 <!DOCTYPE html>
-<html>	
-	<head>
-		<meta charset="UTF-8">
-		<title>Jiahui (Alan) Lu </title>
-		<link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-	</head>	
-	
-	<body>	
-		<div id="page" >
-			<!--<el-row :show-overflow-tooltip="true">
-				<el-col :span="5" class="container side">-->
-				<div class = "container side">
-					<img src="photo2.jpg" height="300" class="photo"/>
-					<br>
-					<!--<h2>Contact Information</h2>-->
-					<b>Email: </b><br>
-					<!-- jlu355(at)gatech(dot)edu<br> -->
-					wap(dot)alan(at)gmail(dot)com<br>
-					lujiahui1(at)gmail(dot)com<br>
-					<!--<b>Office: </b>CODA E0955-->
-					<br>
-					<a href="https://github.com/AlanWaP/CV/blob/master/cv-Jiahui-Lu.pdf">CV</a><br>
-					<a href="https://github.com/AlanWaP">Github</a><br>
-					<a href="https://www.linkedin.com/in/alanwap">LinkedIn</a>
-			<!--</el-col>
-				<el-col :span="18" :show-overflow-tooltip="true" class="container">-->
-				</div>
-				<div class = "container main">
-					<h1>Jiahui Lu</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jiahui (Alan) Lu - Software Engineer & Researcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">Jiahui Lu</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#research" class="nav-link">Research</a></li>
+                <li><a href="#publications" class="nav-link">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
 
-					<el-tabs v-model="activeName" @tab-click="handleClick">
-						<el-tab-pane label="About me" name="About me">
-							<h2>About me</h2>
-							I am working as software engineer at Cresta Intelligence Inc. on backend integration  <br>
-							I worked as software engineer at Inpur USA Inc. on database system developement. <br>
-							I worked as research scientist at JD.com Silicon Valley R&amp;D Center on privacy computing.<br> 
-							I graduated from Georgia Institute of Technology in 2021 (M.S. in Computer Science).<br> 
-							I graduated from Shanghai Jiao Tong University in 2017 (B.S. in Computer Science). I was a student of <a href="https://acm.sjtu.edu.cn">ACM Honored Program</a>, <a href="http://zhiyuan.sjtu.edu.cn/">Zhiyuan College</a> at SJTU.<br>
-						</el-tab-pane>
-						<el-tab-pane label="Research" name="Research">
-							<h2>Research</h2>
-							I worked with Professor <a href="https://www.cc.gatech.edu/~abldyre">Sasha Boldyerva</a>, focusing on anonymous review system.<br>
-							I worked with Professor <a href="http://www.cs.toronto.edu/~vlad/">Vlad Kolesnikov</a>, also working on optimizations of some MPC protocols.<br>
-							I worked with Professor <a href="https://rist.tech.cornell.edu/">Tom Riostenpart</a> as an intern at <a href="https://tech.cornell.edu">Cornell Tech</a> for half a year since August 2016.<br>
-						</el-tab-pane>
-						<el-tab-pane label="Publications" name="Publications">
-							<h2>Publications</h2>
-							<ul>
-								<li><a href="https://link.springer.com/chapter/10.1007/978-3-030-78086-9_31">Efficient Generic Arithmetic for KKW - Practical Linear MPC-in-the-Head NIZK on Commodity Hardware without Trusted Setup</a><br> 
-								David Heath, Vladimir Kolesnikov, Jiahui Lu<br>
-								<i>International Symposium on Cyber Security Cryptology and Machine Learning - CSCML 2021</i><br>
-								Conference Talk
-								<br><br>
-								<li><a href="https://eprint.iacr.org/2017/664">Message Franking via Committing Authenticated Encryption</a><br>
-								Paul Grubbs, Jiahui Lu, and Thomas Ristenpart<br>
-								<i>Advances in Cryptology - Crypto 2017</i>
-								<br><br>
-								<li><a href="https://stressattack.github.io/">Side-Channel Attacks on Shared Search Indexes</a>
-								<br>Liang Wang, Paul Grubbs, Jiahui Lu, Vincent Bindschaedler, David Cash, and Thomas Ristenpart<br>
-								<i>IEEE Symposium on Security and Privacy - Oakland 2017</i>
-								<br><br>
-							</ul>
-						</el-tab-pane>
-					</el-tabs>
-				<!--</el-col>-->
-				</div>
-				
-			</el-row>
-		</div>
-	</body>
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="sidebar-content">
+                <img src="photo2.jpg" alt="Jiahui Lu" class="profile-photo">
+
+                <div class="contact-info">
+                    <h3>Contact</h3>
+                    <div class="contact-item">
+                        <strong>Email:</strong><br>
+                        wap.alan@gmail.com<br>
+                        lujiahui1@gmail.com
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://github.com/AlanWaP/CV/blob/master/cv-Jiahui-Lu.pdf" class="social-link" target="_blank">
+                        <span>📄</span> CV
+                    </a>
+                    <a href="https://github.com/AlanWaP" class="social-link" target="_blank">
+                        <span>💻</span> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/alanwap" class="social-link" target="_blank">
+                        <span>👔</span> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Hero Section -->
+            <section class="hero">
+                <h1 class="hero-title">Jiahui Lu</h1>
+                <p class="hero-subtitle">Software Engineer & Researcher</p>
+            </section>
+
+            <!-- About Section -->
+            <section id="about" class="content-section">
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>I am currently working as a software engineer at <strong>Cresta Intelligence Inc.</strong>, focusing on backend integration.</p>
+
+                    <p>Previously, I worked as a software engineer at <strong>Inspur USA Inc.</strong> on database system development, and as a research scientist at <strong>JD.com Silicon Valley R&D Center</strong> on privacy computing.</p>
+
+                    <p>I graduated from <strong>Georgia Institute of Technology</strong> in 2021 with an M.S. in Computer Science.</p>
+
+                    <p>I received my B.S. in Computer Science from <strong>Shanghai Jiao Tong University</strong> in 2017, where I was a student of the <a href="https://acm.sjtu.edu.cn">ACM Honored Program</a> at <a href="http://zhiyuan.sjtu.edu.cn/">Zhiyuan College</a>.</p>
+                </div>
+            </section>
+
+            <!-- Research Section -->
+            <section id="research" class="content-section">
+                <h2>Research</h2>
+                <div class="section-content">
+                    <p>I worked with Professor <a href="https://www.cc.gatech.edu/~abldyre">Alexandra Boldyreva</a>, focusing on anonymous review systems.</p>
+
+                    <p>I worked with Professor <a href="http://www.cs.toronto.edu/~vlad/">Vladimir Kolesnikov</a>, working on optimizations of Multi-Party Computation (MPC) protocols.</p>
+
+                    <p>I worked with Professor <a href="https://rist.tech.cornell.edu/">Thomas Ristenpart</a> as an intern at <a href="https://tech.cornell.edu">Cornell Tech</a> for half a year starting August 2016.</p>
+                </div>
+            </section>
+
+            <!-- Publications Section -->
+            <section id="publications" class="content-section">
+                <h2>Publications</h2>
+                <div class="section-content">
+                    <div class="publication">
+                        <h3 class="pub-title">
+                            <a href="https://link.springer.com/chapter/10.1007/978-3-030-78086-9_31">
+                                Efficient Generic Arithmetic for KKW - Practical Linear MPC-in-the-Head NIZK on Commodity Hardware without Trusted Setup
+                            </a>
+                        </h3>
+                        <p class="pub-authors">David Heath, Vladimir Kolesnikov, Jiahui Lu</p>
+                        <p class="pub-venue"><em>International Symposium on Cyber Security Cryptology and Machine Learning - CSCML 2021</em></p>
+                        <p class="pub-note">Conference Talk</p>
+                    </div>
+
+                    <div class="publication">
+                        <h3 class="pub-title">
+                            <a href="https://eprint.iacr.org/2017/664">
+                                Message Franking via Committing Authenticated Encryption
+                            </a>
+                        </h3>
+                        <p class="pub-authors">Paul Grubbs, Jiahui Lu, and Thomas Ristenpart</p>
+                        <p class="pub-venue"><em>Advances in Cryptology - Crypto 2017</em></p>
+                    </div>
+
+                    <div class="publication">
+                        <h3 class="pub-title">
+                            <a href="https://stressattack.github.io/">
+                                Side-Channel Attacks on Shared Search Indexes
+                            </a>
+                        </h3>
+                        <p class="pub-authors">Liang Wang, Paul Grubbs, Jiahui Lu, Vincent Bindschaedler, David Cash, and Thomas Ristenpart</p>
+                        <p class="pub-venue"><em>IEEE Symposium on Security and Privacy - Oakland 2017</em></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Jiahui Lu. All rights reserved.</p>
+    </footer>
+
+    <style>
+        /* Reset and Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Source Sans Pro', Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.7;
+            color: #3E2723;
+            background-color: #FFF8F0;
+            overflow-x: hidden;
+        }
+
+        /* Typography */
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            color: #3E2723;
+            line-height: 1.3;
+        }
+
+        h1 { font-size: 2.5rem; }
+        h2 {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: #D2691E;
+        }
+        h3 { font-size: 1.3rem; margin-bottom: 0.8rem; }
+
+        a {
+            color: #CD5C5C;
+            text-decoration: none;
+            transition: color 0.3s ease, transform 0.2s ease;
+            display: inline-block;
+        }
+
+        a:hover {
+            color: #E07856;
+            transform: translateX(2px);
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        strong {
+            font-weight: 600;
+            color: #5D4037;
+        }
+
+        /* Navigation */
+        #navbar {
+            position: sticky;
+            top: 0;
+            background-color: rgba(255, 248, 240, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(210, 105, 30, 0.1);
+            z-index: 1000;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        #navbar.scrolled {
+            background-color: rgba(255, 248, 240, 0.98);
+            box-shadow: 0 2px 15px rgba(210, 105, 30, 0.15);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-brand {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #D2691E;
+        }
+
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+        }
+
+        .nav-toggle span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #D2691E;
+            margin: 5px 0;
+            transition: 0.3s;
+            border-radius: 3px;
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            font-weight: 400;
+            font-size: 1rem;
+            color: #5D4037;
+            padding: 0.5rem 0;
+            position: relative;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #E07856;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after {
+            width: 100%;
+        }
+
+        /* Container Layout */
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 3rem;
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Sidebar */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+
+        .sidebar-content {
+            background: linear-gradient(135deg, #FFFAF0 0%, #FFE4B5 100%);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(210, 105, 30, 0.15);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .sidebar-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(210, 105, 30, 0.2);
+        }
+
+        .profile-photo {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-photo:hover {
+            transform: scale(1.03);
+        }
+
+        .contact-info {
+            margin: 1.5rem 0;
+            text-align: left;
+        }
+
+        .contact-info h3 {
+            font-size: 1.2rem;
+            color: #D2691E;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .contact-item {
+            background-color: rgba(255, 255, 255, 0.6);
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 0.8rem;
+            font-size: 0.95rem;
+        }
+
+        .social-links {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+        }
+
+        .social-link {
+            background-color: #E07856;
+            color: white;
+            padding: 0.8rem 1.2rem;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+
+        .social-link:hover {
+            background-color: #CD5C5C;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(205, 92, 92, 0.3);
+        }
+
+        .social-link span {
+            margin-right: 0.5rem;
+        }
+
+        /* Main Content */
+        .main-content {
+            animation: slideInRight 0.8s ease-in;
+        }
+
+        @keyframes slideInRight {
+            from { opacity: 0; transform: translateX(30px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #FFE4B5 0%, #FFDAB9 100%);
+            padding: 3rem 2rem;
+            border-radius: 15px;
+            margin-bottom: 2rem;
+            box-shadow: 0 10px 30px rgba(210, 105, 30, 0.15);
+        }
+
+        .hero-title {
+            font-size: 3rem;
+            color: #D2691E;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.3rem;
+            color: #5D4037;
+            font-weight: 300;
+        }
+
+        .content-section {
+            background: white;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            opacity: 0;
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        .content-section:nth-child(2) { animation-delay: 0.1s; }
+        .content-section:nth-child(3) { animation-delay: 0.2s; }
+        .content-section:nth-child(4) { animation-delay: 0.3s; }
+        .content-section:nth-child(5) { animation-delay: 0.4s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+        }
+
+        .content-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(210, 105, 30, 0.15);
+        }
+
+        .section-content {
+            color: #3E2723;
+        }
+
+        .section-intro {
+            font-style: italic;
+            color: #5D4037;
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Publications */
+        .publication {
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            background-color: #FFFAF0;
+            border-radius: 8px;
+            border-left: 5px solid #D2691E;
+            transition: all 0.3s ease;
+        }
+
+        .publication:hover {
+            background-color: #FFE4B5;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(210, 105, 30, 0.1);
+        }
+
+        .pub-title {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pub-title a {
+            color: #CD5C5C;
+            font-weight: 600;
+        }
+
+        .pub-authors {
+            color: #5D4037;
+            font-size: 0.95rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .pub-venue {
+            color: #3E2723;
+            font-size: 0.9rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .pub-note {
+            color: #E07856;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #3E2723;
+            color: #FFE4B5;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 3rem;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: 300px 1fr;
+                gap: 2rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            .nav-menu {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background-color: rgba(255, 248, 240, 0.98);
+                flex-direction: column;
+                padding: 1rem 2rem;
+                gap: 0;
+                box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+                max-height: 0;
+                overflow: hidden;
+                transition: max-height 0.3s ease;
+            }
+
+            .nav-menu.active {
+                max-height: 300px;
+            }
+
+            .nav-menu li {
+                margin: 0.8rem 0;
+            }
+
+            .container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+                padding: 1rem;
+            }
+
+            .sidebar {
+                position: static;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1.1rem;
+            }
+
+            .content-section {
+                padding: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.6rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .nav-container {
+                padding: 1rem;
+            }
+
+            .hero {
+                padding: 2rem 1.5rem;
+            }
+
+            .hero-title {
+                font-size: 1.8rem;
+            }
+
+            h1 { font-size: 2rem; }
+            h2 { font-size: 1.5rem; }
+        }
+    </style>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        let lastScroll = 0;
+
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+
+            if (currentScroll > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll for navigation links (fallback for older browsers)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const offsetTop = target.offsetTop - 80;
+                    window.scrollTo({
+                        top: offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Intersection Observer for scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all content sections
+        document.querySelectorAll('.content-section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Add active state to navigation links based on scroll position
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('.content-section');
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                const sectionHeight = section.clientHeight;
+
+                if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
 </html>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
-<script src="https://unpkg.com/element-ui/lib/index.js"></script>
-<script>
-	new Vue({
-		el: '#page',
-		data: function() {
-			return { activeName: 'About me' }
-		},
-		methods: {
-     		handleClick(tab, event) {
-        		//console.log(tab, event);
-      		}
-    	}
-	})
-</script>
-
-<style>
-	#page {
-		margin-top: 1em;
-		margin-left: 5em;
-		margin-right: 5em;
-		display: flex;
-	}
-	.container {
-		margin: 1em;
-		background: #fff;
-		border-radius: 5px;
-		box-shadow: 0 5px 20px #bbb;
-		box-sizing: border-box;
-		padding: 1rem;
-		height: 40em;
-	}
-	.side {
-		white-space: nowrap;
-		width: 25em;
-	}
-	.photo {
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	.main {
-		width: 100%;
-	}
-
-</style>
